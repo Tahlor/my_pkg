@@ -114,22 +114,22 @@ cover here is called [Travis CI](https://travis-ci.org/).
 ### Continuous Integration, Travis CI
 
 The first thing you need to do is enable Travis CI to monitor your git
-repository and run unit tests when it detects a change. To do that go
+repository and run unit tests when it detects a change. To do that, go
 to: [https://travis-ci.org/](https://travis-ci.org/) and click on the
 'Sign in with GitHub' or 'Sign up' buttons (either will have the same
-effect. Once logged in the server should automatically start linking
-with GitHub and listing your repositories, if it doesn't go up to your
+effect). Once logged in, the server should automatically start linking
+with GitHub and listing your repositories. If it doesn't, go up to your
 name in the top right corner and click on the accounts option that
 pops down.
 
-Once your account has synced with GitHub you should see the repository
+Once your account has synced with GitHub, you should see the repository
 you created at the start of this project with grey box and `x` in a
-square next to it. Click that box, it will turn blue and, the `x` will
-turn into a check. You've enabled Travis CI to monitor and
-run the unit tests on your repository.
-Now we just need to make sure Travis CI knows what to do when it's
-running those tests. This is accomplished via the
-[.travis.yml](.travis.yml) file. The .travis.yml file should look something like this:
+square next to it. Clicking that box will enable Travis CI to monitor 
+and run the unit tests on your repository (the box will turn blue and 
+`x` should turn into a check). Now we just need to make sure Travis CI 
+knows what to do when it's running those tests. This is accomplished by 
+creating [.travis.yml](.travis.yml) file. The .travis.yml file should 
+look something like this:
 
 ```
 language: python
@@ -142,6 +142,11 @@ install:
   - pip install tox
 # command to run tests
 script: tox  
+# environmental variables
+env:
+  -
+  - 
+  
 ```
 
 The first line of the file tells Travis CI that the programming
@@ -154,7 +159,7 @@ python:
 ```
 
 Inform Travis CI that you will be performing tests in the python 2.7
-and 3.4 environments, if these are not the python versions you want
+and 3.4 environments. If these are not the python versions you want
 Travis CI to run tests in then modify these lines to reflect the
 python versions you are testing your code in. The next lines tell
 Travis CI what it needs to install to run your tests:
@@ -209,7 +214,7 @@ repository from the list. Then next your repository name, in the
 middle of the screen, you will see the word `build` in a black box
 with another box next to it, click on the word build. A pop-up will
 open, from the second drop-down menu select Markdown then copy the text
-in the box at the bottom of the pop-up. Past that text to the top of
+in the box at the bottom of the pop-up. Paste that text to the top of
 your README.
 
 ### Code Coverage, Codecov
