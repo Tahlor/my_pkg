@@ -30,7 +30,7 @@ setup(name='my_pkg',
           "numpy",
       ],
       license=['MIT'],
-      packages=['my_pkg'],
+      packages=['the_package'],
       scripts=[],
       classifiers=[
           'Development Status :: 2 - Pre-Alpha',
