@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+#import os
+#del os.link
 try:
     from setuptools import setup
     args = {}

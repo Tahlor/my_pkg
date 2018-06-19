@@ -20,7 +20,7 @@ def factorial(n):
     Returns:
         fact (int): The factorial of n. 
     Raises:
-        ValueError: If n is not an integer.
+        ValueError: If n is not a non-negative integer.
     """
 
     if n < 0:
