@@ -3,5 +3,5 @@
 [![Code Health](https://landscape.io/github/Tahlor/my_pkg/dev/landscape.svg?style=flat)](https://landscape.io/github/Tahlor/my_pkg/dev)
 
 # my_pkg
-Full API Documentation available at: [github pages](https://tahlor.github.io/my_pkg/).  
+Full API Documentation available at: [github pages](https://tahlor.github.io/my_pkg/html).  
 
